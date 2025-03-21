@@ -45,6 +45,18 @@ function playRound(humanChoice, computerChoice) {
   console.log();
 }
 
+const rock = document.querySelector("button.rock");
+const paper = document.querySelector("button.paper");
+const scissors = document.querySelector("button.scissors");
+const playerChoices = document.querySelectorAll("button");
+
+playerChoices.forEach((choice) => {
+  choice.addEventListener("click", () => {
+    console.log(choice.className);
+  });
+});
+
+/*
 function playGame() {
   for (let i = 1; i <= 5; i++) {
     playRound(getHumanChoice(), getComputerChoice());
@@ -62,3 +74,5 @@ function playGame() {
 }
 
 playGame();
+
+*/
